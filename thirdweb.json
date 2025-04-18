@@ -1,0 +1,8 @@
+{
+  "cli": {
+    "version": "0.0.1"
+  },
+  "chainId": 31,
+  "rpc": "https://public-node.testnet.rsk.co",
+  "privateKey": "4c4994a4fdd9588fee046e8f48a5ba540ee163c388fbddf3335123f85187a381"
+}

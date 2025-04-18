@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: reputation-dao-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PRIVATE_KEY
+        sync: false
+      - key: ROOTSTOCK_TESTNET_RPC
+        value: https://public-node.testnet.rsk.co
+      - key: REPUTATION_ORACLE_ADDRESS
+        sync: false
+      - key: BLOCKSCOUT_API_URL
+        value: https://blockscout.com/rootstock/testnet/api
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGIN
+        sync: false
